@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&family=Lalezar&family=Lilita+One&display=swap');
+
+body{
+    font-family: 'Lalezar', cursive;
+    overflow: hidden;
+}
+#head{
+    position: fixed;
+}
+#head.active{
+    display: none;
+}
+#menu{
+    border:1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    cursor: pointer;
+}
+
+#menu span{
+    background: darkred;
+    width:20px;
+    height: 1px;
+}
+#home{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#home.active{
+    display: none;
+}
+#m-nav{
+    background: linear-gradient(to right top,darkcyan,#fff);
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.4s ease;
+}
+#m-nav.active{
+    transform: translateX(0);
+}
+#m-nav #links{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #333;
+    background-clip: text;
+    background-image: linear-gradient(to right,red,#fff);
+    cursor: pointer;
+}
+#exit{
+    position: absolute;
+    right:0;
+    background:coral;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+#who{
+    background: linear-gradient(to right bottom,#075e54,darkcyan);
+    z-index: 1000;
+    transform: translateX(-110%);
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.4s ease;
+    height: 100vh;
+    overflow: hidden;
+}
+#who.active{
+    transform: translateX(0);
+}
+#who #btns{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#who #con{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#btns button{
+    border:2px solid silver;
+    border-radius: 5px;
+    outline: none;
+}
+#names{
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    font-size: 32px;
+}
+#main{
+    display: none;
+}
+#main.active{
+    display: block;
+}
+#close{
+    position: absolute;
+    right:0;
+    top:0;
+    background: #fff;
+    padding:3px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+#five{
+    background: linear-gradient(to right bottom,#075e54,darkcyan);
+    z-index: 1000;
+    transform: translateX(-110%);
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.4s ease;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#five.active{
+    transform: translateX(0);
+
+}
+#five h1{
+    border:2px solid silver;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#five #next{
+    margin-top: 15px;
+    padding:3px;
+    border-radius: 8px;
+    border:2px solid silver;
+}
+#five #timer{
+    border-radius: 50%;
+    border:2px solid silver;
+    margin-top: 18px;
+}
+#exitf{
+    position: absolute;
+    top:0;
+    right:0;
+    background: #fff;
+    width:30px;
+    padding:3px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+#audio{
+    display: none;
+}
+#password{
+    background: linear-gradient(to right bottom,#075e54,darkcyan);
+    z-index: 1000;
+    transform: translateX(-110%);
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.4s ease;
+    height: 100vh;
+}
+#password.active{
+    transform: translateX(0);
+}
+#password #btnpass{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    gap:12px
+}
+#password #conpass{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#password #btnpass button{
+    border:2px solid silver;
+    border-radius: 5px;
+    outline: none;
+}
+#password #namespass{
+    background: rgba(255,255,255,0.5);
+    margin-top: 25px;
+    text-align: center;
+    font-size: 32px;
+}
+#closepass{
+    position: absolute;
+    right:0;
+    top:0;
+    background: #fff;
+    padding:3px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+#mainpass{
+    display: none;
+}
